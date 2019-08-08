@@ -2,6 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
+    <!-- cordova -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- cordova -->
+
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta
       name="viewport"
@@ -14,5 +22,9 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
   </body>
 </html>
